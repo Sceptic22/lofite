@@ -1,0 +1,51 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+
+  admin.portfolio:
+    class: Lofite\LofiteBundle\Admin\PortfolioAdmin
+    arguments: [~, Lofite\LofiteBundle\Entity\Portfolio, ~]
+    tags:
+       - { name: sonata.admin, manager_type: orm, label: Portfolio }
+
+  admin.contacts:
+    class: Lofite\LofiteBundle\Admin\ContactsAdmin
+    arguments: [~, Lofite\LofiteBundle\Entity\Contacts, ~]
+    tags:
+        - { name: sonata.admin, manager_type: orm, label: Contacts }
+
+  admin.images:
+    class: Lofite\LofiteBundle\Admin\ImagesAdmin
+    arguments: [~, Lofite\LofiteBundle\Entity\Images, ~]
+    tags:
+        - { name: sonata.admin, manager_type: orm, label: Images }
+
+  admin.vacancies:
+    class: Lofite\LofiteBundle\Admin\VacanciesAdmin
+    arguments: [~, Lofite\LofiteBundle\Entity\Vacancies, ~]
+    tags:
+        - { name: sonata.admin, manager_type: orm, label: Vacancies }
+
+  admin.users:
+    class: Lofite\LofiteBundle\Admin\UsersAdmin
+    arguments: [~, Lofite\LofiteBundle\Entity\Users, ~]
+    tags:
+        - { name: sonata.admin, manager_type: orm, label: Users }
+
+
+
+
+
+
+
+
+
+
+

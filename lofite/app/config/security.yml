@@ -1,0 +1,34 @@
+security:
+    encoders:
+        Lofite\LofiteBundle\Entity\Users:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+
+    providers:
+        main:
+            entity: { class: LofiteBaseBundle:Users, property: username }
+
+    firewalls:
+
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            pattern: /.*
+            form_login:
+                check_path: /login_check
+                login_path: /login
+                default_target_path: /admin
+            logout: true
+            security: true
+            anonymous: true
+
+    access_control:
+        - { path: /admin/.*, role: ROLE_ADMIN }
+        - { path: /.*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+
+
+
+

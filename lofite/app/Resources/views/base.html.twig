@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <link rel="shortcut icon" href="{{ asset('mlogo.png') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title> {% block title %}Lofite{% endblock %}</title>
+    {% block headData %}{% endblock %}
+
+</head>
+
+<body>
+
+
+{% block content %}{% endblock %}
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 footer-logo">
+                <a href="#home"><img src="{{ asset('img/logo.png')}}" alt=""></a>
+            </div>
+            <div class="col-md-6 footer-menu">
+                <a href="#">
+                    <img src="{{ asset('img/fb.ico')}}" alt="">
+                </a>
+                <p class="">Lofite.com © 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+{% block footData %}
+{% endblock %}
+</body>
+</html>
+

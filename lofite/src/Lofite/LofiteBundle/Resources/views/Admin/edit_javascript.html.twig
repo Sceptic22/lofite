@@ -1,0 +1,17 @@
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
+{% block javascripts %}
+    {{ parent() }}
+    <script  type="text/javascript">
+        $(document).ready(function()
+        {
+            var files=$("input:file");
+            var img;
+            for(var i=0;i<files.length;i++)
+            {
+                img=files.eq(i).attr('data-img');
+                files.eq(i).after("<img src='"+img+"' style='max-height: 128px; max-width: 100%;border:1px solid black;margin:5px;' title='текущее изображение'>");
+            }
+        });
+
+    </script>
+{% endblock %}

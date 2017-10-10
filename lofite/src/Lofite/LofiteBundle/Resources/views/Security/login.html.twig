@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <link rel="shortcut icon" href="{{ asset('mlogo.png') }}" />
+
+    <title>Войти </title>
+
+
+        <script type="text/javascript" src="{{ asset('js/jquery-3.1.0.min.js') }}"></script>
+
+
+
+        <link href='{{ asset('css/bootstrap.min.css') }}' rel='stylesheet' type='text/css'>
+        <link href='{{ asset('css/bootstrap-theme.min.css') }}' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <style>
+
+        .input-group { margin-bottom:10px; }
+
+
+
+    </style>
+
+</head>
+
+<body >
+
+{% if error %}
+    <div class="alert alert-danger text-center col-md-12">{{ error.message }}</div>
+{% else %}
+    <div class="alert alert-info text-center col-md-12">Please log in</div>
+{% endif %}
+
+
+
+<div class="container centered">
+    <div class="row vcenter">
+        <form action="{{ path('_security_check') }}" method="POST">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Login</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+
+                        <div class="col-md-12 text-center login-box">
+
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    {% if is_granted("ROLE_ADMIN") %}
+                                    <input type="text" id="username" name="_username" value="{{ app.user.username }}" placeholder="Username" class="form-control" autofocus/>
+                                    {% else %}
+                                    <input type="text" id="username" name="_username" value="{{ last_username }}" placeholder="Username" class="form-control" autofocus/>
+                                    {% endif %}
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon"></span>
+                                    <input type="password" id="password" name="_password" class="form-control" placeholder="Password" required/>
+                                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class=" col-md-12 text-center">
+
+
+                            {% if is_granted("ROLE_ADMIN") %}
+                            <a href="{{  path('_security_logout')  }}"><button type="button" class="btn btn-labeled btn-danger">Exit</button></a>
+                            {% else %}
+                                <button type="submit" class="btn btn-labeled btn-success" name="login">Login</button>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+
+</html>
+
+
+

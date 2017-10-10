@@ -1,0 +1,31 @@
+_security_login:
+    pattern:  /login
+    defaults: { _controller: LofiteBaseBundle:Security:login }
+
+_security_check:
+    pattern:  /login_check
+
+_security_logout:
+    pattern:  /logout
+
+
+
+
+
+LofiteBaseBundle_homepage:
+    path:     /
+    defaults: { _controller: "LofiteBaseBundle:Page:index" }
+    requirements:
+         methods:  GET
+
+LofiteBaseBundle_review:
+    path:     /review
+    defaults: { _controller: "LofiteBaseBundle:Page:review" }
+    requirements:
+         methods:  GET
+
+LofiteBaseBundle_send:
+    path:     /send
+    defaults: { _controller: "LofiteBaseBundle:Page:sendMail" }
+    requirements:
+         methods:  POST

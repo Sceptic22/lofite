@@ -1,0 +1,4 @@
+services:
+#    lofite_base.example:
+#        class: Lofite\LofiteBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

@@ -1,0 +1,265 @@
+{% extends 'LofiteBaseBundle::layout.html.twig' %}
+
+{% block content %}
+
+
+
+
+    <section id="home" class="home">
+        <video autoplay="true" loop>
+            <source src="{{ asset('img/WDV.mp4')}}">
+        </video>
+        <div class="container-fluid head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 menu">
+                        <div class="logo pull-left">
+                            <a href="#home"><img src="{{ asset('img/logo.png')}}" alt=""></a>
+                        </div>
+
+                        <nav id="#mainNavbar" class="navbar navbar-expand-lg navbar-light pull-right">
+                            <button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link home-marker" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link three-marker" href="#three">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link four-marker" href="#four">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link five-marker" href="#five">Our work</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link six-marker" href="#six">Contact</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="container">
+            <div class="col-md-7 description">
+                <h1 class="wow fadeIn" data-wow-duration="2s">
+                    Be online with us
+                    {#We’re here to create your#}
+                    {#online presense and style#}
+                </h1>
+                <p class="wow fadeIn" data-wow-duration="3s" data-wow-delay="1s">
+                    We are happy to deliver You web based solutions to grow Your business.</p>
+            </div>
+
+            <button class="wow fadeIn" data-wow-delay="3s"><a href="#three">Start today with us</a></button>
+
+        </div>
+
+
+    </section>
+
+    <section id="three" class="three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 dev-img">
+                    <img src="{{ asset('img/webdev.png')}}" alt="" class="wow fadeInLeft">
+                </div>
+                <div class="col-md-6">
+                    <div class="about wow fadeInRight">
+                        <h2>Who we are</h2>
+                        <p>We are a top rated web development agency focusing on building web solutions that work,
+                            make sense, and help people. Whether You want to start Your business or transform one,
+                            we support You step by step to achieve a product that You love.
+                        </p>
+                        <button class="wow fadeIn" data-wow-delay="2s">More abuot our team</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="second" class="second">
+
+
+        <div class="container">
+            <h2 class="wow fadeInUp text-center" data-wow-duration="2s">Features you’ll love</h2>
+            <div class="line1 wow fadeInLeft" data-wow-duration="2s"></div>
+            <div class="line2 wow fadeInRight" data-wow-duration="2s"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="features wow fadeInLeft" data-wow-duration="2s">
+                        <div class="features-icon">
+                            <img src="{{ asset('img/user.svg')}}" alt="">
+                        </div>
+                        <h4 class="text-center">Personal touch</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="features wow fadeIn" data-wow-delay="1s">
+                        <div class="features-icon">
+                            <img src="{{ asset('img/user.svg')}}" alt="">
+                        </div>
+                        <h4 class="text-center">UNIQUE SOLUTIONS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="features wow fadeInRight" data-wow-duration="2s">
+                        <div class="features-icon">
+                            <img src="{{ asset('img/user.svg')}}" alt="">
+                        </div>
+                        <h4 class="text-center">SUPPORT</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam volutpat purus in ferment uectetur tortor id, pharetra lorem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <section id="four" class="four">
+
+        <div class="container">
+            <h2 class="text-center wow fadeInUp" data-wow-duration="2s">Our services</h2>
+            <div class="line1 wow fadeInLeft" data-wow-duration="2s"></div>
+            <div class="line2 wow fadeInRight" data-wow-duration="2s"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="services wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
+                        <img src="{{ asset('img/logo-design.png')}}" alt="">
+                        <h4>Web design</h4>
+                        <p>ptent capto commoveo esse eu nostrud nutus probo. Ad amet comis duis feugiat metuo pneum praesent saepius sudo.
+                            Abico caecus cui duis </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="services wow fadeInLeft" data-wow-duration="2s">
+                        <img src="{{ asset('img/web-development-banner.png')}}" alt="">
+                        <h4>Web development</h4>
+                        <p>ptent capto commoveo esse eu nostrud nutus probo. Ad amet comis duis feugiat metuo pneum praesent saepius sudo.
+                            Abico caecus cui duis </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="services wow fadeInRight" data-wow-duration="2s">
+                        <img src="{{ asset('img/ux-iu-logo-retina2.png')}}" alt="">
+                        <h4>UI/UX</h4>
+                        <p>ptent capto commoveo esse eu nostrud nutus probo. Ad amet comis duis feugiat metuo pneum praesent saepius sudo.
+                            Abico caecus cui duis </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="services services wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+                        <img src="{{ asset('img/web-support.png')}}" alt="">
+                        <h4>Support</h4>
+                        <p>ptent capto commoveo esse eu nostrud nutus probo. Ad amet comis duis feugiat metuo pneum praesent saepius sudo.
+                            Abico caecus cui duis </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="five" class="five">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h2 class="wow fadeInDown">Our Experience</h2>
+                    <p class="wow fadeInLeft">Distineo dolore gemino meus natu populus refero sagaciter. Capto duis importunus in te ullamcorper.
+                        Iusto praemitto quadrum suscipere. Abluo saepius utinam utrum. Abico bene duis eros gravis pala quibus tum.
+                        Adipiscing bene sino veniam virtus. Appellatio obruo paratus plaga refero wisi. Imputo lenis nunc pneum.
+                        Genitus hendrerit ulciscor ut. Ex paratus praesent valde.
+                        Appellatio obruo paratus plaga refero wisi. Imputo lenis nunc pneum.
+                        Genitus hendrerit ulciscor ut. Ex paratus praesent valde</p>
+                    <button class="wow fadeIn" data-wow-delay="3s">View case studies</button>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <h2 class="wow fadeInDown" data-wow-delay="1s">Our work</h2>
+                    <div class="row wow fadeInRight" data-wow-delay="1s" id="port">
+                        {% if list_portfolio is not empty %}
+
+                            {% for indx,portfolio in list_portfolio %}
+                                <div class="project_container col-xs-12 col-sm-6  phide"><div class="img_container"><a target="_parent" href="{{  path('LofiteBaseBundle_review')}}?id={{     portfolio.getId()  }}"><img src="{{ asset(imgs[indx]) }}"/></a></div><p> <a target="_blank" href="{{  path('LofiteBaseBundle_review')}}?id={{     portfolio.getId()  }}">{{     portfolio.getName()  }}</a> </p></div>
+                            {% endfor %}
+
+                            <div class="col-md-12 pag_numbers wow fadeInRight" data-wow-delay="2s" ></div>
+
+                        {% endif %}
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="six" class="six">
+        <div class="container">
+            <h2 class="text-center wow fadeInUp" data-wow-duration="2s">Contact</h2>
+            {% if contacts is not empty %}
+                <div class="contact-info wow fadeInUp" data-wow-duration="2s">
+                    <p>We would love to hear from you! Fill out the form below, or drop us a line at</p>
+                    {% if contacts.telephone is not empty %}
+                        <p>
+                            give us a call at {{ contacts.telephone }}
+                        </p>
+                    {% endif %}
+                    <a href="mailto:{{ contacts.email }}">{{ contacts.email }}</a>
+                </div>
+            {% endif %}
+            <form id="form_contact" role="form" method="post" action="{{ path('LofiteBaseBundle_send') }}" onsubmit="return false;">
+                <label class="text-center wow fadeInUp" data-wow-duration="2s" for="name">Name</label>
+                <input class="wow fadeInUp" data-wow-duration="2s" type="text" placeholder="Enter Name" name="name" id="name" required pattern=".{4,20}" title="4 to 20 characters">
+                <label class="text-center wow fadeInUp" data-wow-duration="2s" for="email">Email</label>
+                <input class="wow fadeInUp" data-wow-duration="2s" type="email" placeholder="Enter Email" name="email" id="email" required pattern=".{4,30}" title="4 to 30 characters">
+                <label class="text-center wow fadeInUp" data-wow-duration="2s" for="message">Message</label>
+                <textarea class="wow fadeInUp" data-wow-duration="2s" name="message" id="message" placeholder="Enter message"></textarea>
+                <input class="wow fadeIn pull-right" data-wow-delay="2s" type="submit" id="btn_send" value="Send">
+            </form>
+        </div>
+
+
+
+        <button id="openAlert" class="btn btn-info btn-lg" type="button" data-toggle="modal" data-target="#myModal" style="display: none;">Open</button>
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Contact</h4>
+                    </div>
+                    <div class="modal-body" id="textAlert"></div>
+                    <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Close</button></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+{% endblock %}

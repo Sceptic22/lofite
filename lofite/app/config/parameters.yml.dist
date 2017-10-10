@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: maksim_lofite
+    database_user: maksim_lofite
+    database_password: kGF447U2
+    mailer_transport: smtp
+    mailer_host: mail.maksim.hhos.ru
+    mailer_port: 587
+    mailer_encryption: tls
+    mailer_user: admin@maksim.hhos.ru
+    mailer_password: 6eznBfle
+    secret: x91baci82j2lgwd1z31a3bt82mgxon4rta8ndzn4
